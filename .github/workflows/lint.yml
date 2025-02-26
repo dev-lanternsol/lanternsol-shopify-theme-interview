@@ -17,5 +17,5 @@ jobs:
       - name: Add Ruby Gems to PATH
         run: echo "$(ruby -r rubygems -e 'puts Gem.user_dir')/bin" >> $GITHUB_PATH
 
-      - name: Run Theme Check
-        run: theme-check .
+      - name: Run Theme Check with Custom Config
+        run: theme-check -c theme-check.yml .
