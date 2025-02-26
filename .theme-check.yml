@@ -1,4 +1,4 @@
-MatchingTranslations:
-  enabled: false
-TemplateLength:
-  enabled: false
+extends: default
+ignore:
+  - node_modules
+  - vendor

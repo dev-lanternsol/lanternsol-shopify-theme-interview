@@ -1,0 +1,27 @@
+{
+  "name": "dawn",
+  "version": "1.0.0",
+  "description": "[![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)\r [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-lanternsol/lanternsol-shopify-theme-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-lanternsol/lanternsol-shopify-theme-interview/issues"
+  },
+  "homepage": "https://github.com/dev-lanternsol/lanternsol-shopify-theme-interview#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}
