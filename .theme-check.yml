@@ -2,3 +2,35 @@ extends: default
 ignore:
   - node_modules
   - vendor
+CustomRules:
+  DeprecatedFilter:
+    enabled: true
+    severity: warning
+  AssetSizeCSS:
+    enabled: true
+    severity: suggestion
+    threshold_in_bytes: 100_000
+  BlockIdUsage:
+    enabled: true
+    severity: warning
+  CSSBlockIdUsage:
+    severity: warning
+    message: "Old Shopify image filter detected. Use new 'width' and 'height' attributes instead."
+    regex: '.*\|\s*({{.*block.id.*}}).*'  # Flags use of block.id
+  CSSThemeIdUsage:
+    severity: warning
+    message: "Old Shopify image filter detected. Use new 'width' and 'height' attributes instead."
+    regex: '.*\|\s*(shopify-section-template-).*'  # Flags use of section.id
+  DeprecatedTag:
+    enabled: true
+    severity: warning
+  ParserBlockingJavascript:
+    enabled: true
+    severity: error
+  RemoteAsset:
+    enabled: true
+    severity: warning
+  VariableName:
+    enabled: true
+    severity: warning
+    format: snake_case
